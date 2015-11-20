@@ -1,15 +1,18 @@
 import random
 
+#
+# print "Player 1, what is your name?"
+# player1 = raw_input()
+#
+# print player1
+#
+# print "Player 2, what is your name?"
+# player2 = raw_input()
+#
+# print player2
 
-print "Player 1, what is your name?"
-player1 = raw_input()
-
-print player1
-
-print "Player 2, what is your name?"
-player2 = raw_input()
-
-print player2
+player1 = "jackson"
+player2 = "rob"
 
 
 deck = [ 2, 2, 2, 2,
@@ -25,10 +28,11 @@ deck = [ 2, 2, 2, 2,
 print "\n\nThe deck of cards:\n"
 print deck
 
+# Shuffle the deck
 random.shuffle(deck)
 
 print "\n\nShuffling:\n"
-print deck
+# print deck
 print "\n"
 
 # Give the player two random cards
@@ -50,10 +54,6 @@ card4=deck.pop()
 player2_total = card3 + card4
 print str(card3) + " " + str(card4) + "     Your total is " + str(player2_total)
 
-
-print card3
-print card4
-
 print "\n\n"
 
 print player1 + ", your total is " + str(card1 + card2)
@@ -63,3 +63,17 @@ answer = raw_input()
 if(answer=="y"):
     hitcard = deck.pop()
     print hitcard
+    player1_total = hitcard + player1_total
+    print player1 + " your new total is " + str(player1_total)
+
+
+
+print player2 + ", your total is " + str(card1 + card2)
+print "would you like to hit (y/n)"
+answer = raw_input()
+
+if (answer =="y"):
+    hitcard = deck.pop()
+    print hitcard
+    player2_total = hitcard + player2_total
+    print player2 + " your new total is " + str(card3+card4)

@@ -1,4 +1,19 @@
-def printWord(bucket1, bucket2):
-    print bucket2 + bucket1
+number1 = 5
+number2 = 4
 
-printWord("blue", "tiger")
+def add (x, y):
+    result = x + y
+    return result
+
+
+answer = add(number1, number2)
+print answer
+
+
+
+def minus (x, y):
+    result = x - y
+    return result
+
+answer = minus(number1, number2)
+print answer
